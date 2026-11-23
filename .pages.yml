@@ -10,7 +10,6 @@ content:
     fields:
       - name: projects
         label: Projects
-        description: Drag projects to change the order they appear on the home page.
         type: object
         list:
           collapsible:
@@ -19,12 +18,11 @@ content:
         fields:
           - name: name
             label: Project name
-            description: e.g. Ross Classic
+            description: e.g. Ross Classic. Drag projects or photos by the handle on the left to reorder.
             type: string
             required: true
           - name: photos
             label: Photos
-            description: Drag photos to reorder. Any size is fine; large files are shrunk automatically within a few minutes.
             type: object
             list:
               collapsible:
@@ -33,6 +31,7 @@ content:
             fields:
               - name: image
                 label: Photo
+                description: Any size is fine. Big files are shrunk automatically a few minutes after saving.
                 type: image
                 required: true
               - name: caption
