@@ -157,9 +157,9 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(96px + 2.9rem + 3.5rem) 
     row-gap: .8rem;
   }
   .logo { grid-area: logo; justify-self: center; padding: 0; }
-  .logo img { height: 64px; }
+  .logo img { height: 84px; }
   .nav .slot a { font-size: .66rem; letter-spacing: .12em; }
-  main { padding: calc(64px + 1.8rem + 1.6rem + 2.5rem) 1.1rem 3.5rem; }
+  main { padding: calc(84px + 1.8rem + 1.6rem + 2.5rem) 1.1rem 3.5rem; }
   .intro { margin-bottom: 2.25rem; }
   .gallery { columns: 1; }
   .gallery figure { margin-bottom: 1.75rem; }
