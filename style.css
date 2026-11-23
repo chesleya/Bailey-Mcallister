@@ -1,6 +1,7 @@
 :root {
-  --ink: #3c4733;
-  --muted: #5f6a53;
+  --ink: #4c5f3c;
+  --logo: #849c68;
+  --muted: #5c7148;
   --line: #e3e2d4;
   --bg: #faf6ef;
   --serif: "Cormorant Garamond", Georgia, serif;
@@ -50,6 +51,31 @@ img { display: block; max-width: 100%; }
 }
 .nav .slot a:hover, .nav .slot a[aria-current="page"] { border-color: currentColor; }
 
+/* Lightbox */
+.gallery img { cursor: zoom-in; }
+.lightbox {
+  position: fixed; inset: 0; z-index: 50;
+  display: none; flex-direction: column; align-items: center; justify-content: center;
+  gap: 1rem; padding: 3.5rem 4.5rem 2rem;
+  background: rgba(250, 246, 239, .97);
+}
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 100%; max-height: calc(100vh - 9rem); width: auto; height: auto; cursor: zoom-out; }
+.lightbox .lb-cap { text-align: center; font-family: var(--serif); color: var(--logo); font-size: 1.05rem; }
+.lightbox .lb-cap strong { display: block; font-family: var(--sans); font-weight: 500; font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--ink); }
+.lightbox button {
+  position: absolute; background: none; border: 0; cursor: pointer;
+  color: var(--ink); font: 300 2rem/1 var(--sans); padding: .75rem;
+}
+.lb-close { top: .75rem; right: 1rem; }
+.lb-prev { left: .75rem; top: 50%; transform: translateY(-50%); }
+.lb-next { right: .75rem; top: 50%; transform: translateY(-50%); }
+body.lb-open { overflow: hidden; }
+@media (max-width: 600px) {
+  .lightbox { padding: 3.5rem .75rem 1.5rem; }
+  .lb-prev, .lb-next { top: auto; bottom: .5rem; transform: none; }
+}
+
 /* guard for stale cached pages from the first version */
 .site-header svg { width: 18px; height: 18px; }
 
@@ -65,6 +91,7 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(96px + 2.9rem + 3.5rem) 
   max-width: 34ch;
   margin: .5rem auto 3.5rem;
   line-height: 1.4;
+  color: var(--logo);
 }
 .gallery {
   columns: 3 320px;
@@ -80,7 +107,7 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(96px + 2.9rem + 3.5rem) 
   font-family: var(--serif);
   font-size: 1rem;
   line-height: 1.35;
-  color: #74806a;
+  color: var(--logo);
 }
 .gallery figcaption strong {
   display: block;
@@ -110,6 +137,7 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(96px + 2.9rem + 3.5rem) 
   font-size: 2.6rem;
   margin: 0 0 1.25rem;
   line-height: 1.15;
+  color: var(--logo);
 }
 .about p { margin: 0 0 1.2rem; }
 
@@ -134,14 +162,16 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(96px + 2.9rem + 3.5rem) 
   border-top: 1px solid var(--line);
   padding: 2.25rem 1.5rem 2.75rem;
   text-align: center;
-  font-size: .8rem;
-  letter-spacing: .12em;
+  font-size: .72rem;
+  font-weight: 500;
+  letter-spacing: .18em;
+  text-transform: uppercase;
   color: var(--muted);
 }
-.site-footer a { text-decoration: none; }
-.site-footer a:hover { color: var(--ink); }
+.site-footer a { text-decoration: none; text-underline-offset: 3px; }
+.site-footer a:hover { text-decoration: underline; }
 .site-footer .sep { margin: 0 .9rem; }
-.site-footer small { display: block; margin-top: .6rem; font-size: .7rem; }
+.site-footer small { display: block; margin-top: .7rem; font-size: .64rem; font-weight: 400; }
 
 @media (max-width: 760px) {
   .about { grid-template-columns: 1fr; gap: 2rem; }
