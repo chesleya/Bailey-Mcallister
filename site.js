@@ -21,13 +21,18 @@
   if (!gallery) return;
 
   const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
-  // Squarespace URLs get a size hint; photos uploaded through Pages CMS are used as-is.
-  const sized = (src, w) => /squarespace-cdn\.com/.test(src) ? `${src.split("?")[0]}?format=${w}w` : src;
+  // Squarespace URLs get a size hint; local photos use the 1000px copy made by the photo workflow.
+  const sized = (src, w) => /squarespace-cdn\.com/.test(src) ? `${src.split("?")[0]}?format=${w}w`
+    : (w <= 1000 && /^\/?images\/[^/]+$/.test(src)) ? src.replace(/images\//, "images/w1000/") : src;
 
   let photos = [];
   try {
     const res = await fetch("content/gallery.json", { cache: "no-cache" });
-    photos = (await res.json()).photos || [];
+    const data = await res.json();
+    // Projects (each with photos) flatten into one gallery; the older flat "photos" list still works.
+    photos = data.projects
+      ? data.projects.flatMap(pr => (pr.photos || []).map(ph => ({ ...ph, project: pr.name })))
+      : (data.photos || []);
   } catch (e) {
     gallery.innerHTML = "<p>Photos are taking a moment. Try refreshing.</p>";
     return;
@@ -35,10 +40,15 @@
 
   gallery.innerHTML = photos.filter(p => p.image).map((p, n) => `
     <figure>
-      <img src="${esc(sized(p.image, 1000))}" data-large="${esc(sized(p.image, 2500))}" data-n="${n}"
+      <img src="${esc(sized(p.image, 1000))}" data-large="${esc(sized(p.image, 2500))}" data-n="${n}" data-full="${esc(p.image)}" loading="lazy"
            alt="${esc([p.project, p.caption].filter(Boolean).join(" — "))}">
       <figcaption>${p.project ? `<strong>${esc(p.project)}</strong>` : ""}${esc(p.caption)}</figcaption>
     </figure>`).join("");
+
+  // If a 1000px copy isn't ready yet (photo just uploaded), fall back to the original.
+  gallery.querySelectorAll("img").forEach(im => im.addEventListener("error", () => {
+    if (im.src !== new URL(im.dataset.full, location.href).href) im.src = im.dataset.full;
+  }, { once: true }));
 
   // Lightbox
   const figs = [...gallery.querySelectorAll("figure")];

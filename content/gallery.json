@@ -1,104 +1,114 @@
 {
-  "photos": [
+  "projects": [
     {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/4fbb2187-980e-4390-8f5a-5348cb3e3a10/1+bailey-mcallister-interiors-alexander-1185.jpg",
-      "project": "Ross Classic",
-      "caption": "Striped walls and a runner up the front stair"
+      "name": "Ross Classic",
+      "photos": [
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/4fbb2187-980e-4390-8f5a-5348cb3e3a10/1+bailey-mcallister-interiors-alexander-1185.jpg",
+          "caption": "Striped walls and a runner up the front stair"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/7512aab7-9296-4982-a795-554497046baf/5+bailey-mcallister-interiors-alexander-6210.jpg",
+          "caption": "Drapery in a crisp blue-and-gold print"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/8a47ce53-6460-4fdb-a033-84047937b92c/9.5+bailey-mcallister-interiors-alexander-6151.jpg",
+          "caption": "A writing desk, botanical prints, one bamboo chair"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/e3b89e78-4829-49c2-b36e-e7e2da2de53f/13+bailey-mcallister-interiors-alexander-1055.jpg",
+          "caption": "Nursery tucked under the eaves"
+        }
+      ]
     },
     {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/7512aab7-9296-4982-a795-554497046baf/5+bailey-mcallister-interiors-alexander-6210.jpg",
-      "project": "Ross Classic",
-      "caption": "Drapery in a crisp blue-and-gold print"
+      "name": "Mill Valley Cottage",
+      "photos": [
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/3e4894de-c7c4-4b51-b1d3-e9dac29f270b/4+bailey-mcallister-interiors-0494.jpg",
+          "caption": "Breakfast nook with a view of the garden"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/989e9b7f-94e4-4d75-bd00-1a64913070bc/2+bailey-mcallister-interiors-0419+COVER+SHOT+FOR+PROJECT.jpg",
+          "caption": "Green sectional, framed prints, plenty of pillows"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/da4ce82d-9734-4de1-bb48-2044362b7ca5/7+bailey-mcallister-interiors-luce-5408-1.jpg",
+          "caption": "A reading corner that went all in on wallpaper"
+        }
+      ]
     },
     {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/8a47ce53-6460-4fdb-a033-84047937b92c/9.5+bailey-mcallister-interiors-alexander-6151.jpg",
-      "project": "Ross Classic",
-      "caption": "A writing desk, botanical prints, one bamboo chair"
+      "name": "Cow Hollow",
+      "photos": [
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1582687924922-5L5PGG5ARGXIVQK1V7JY/8814WEB.jpg",
+          "caption": "Pleated lamp, patterned pillows, a throw within reach"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1582687924894-C494LALZ639DC7YIYTBY/8718WEB.jpg",
+          "caption": "Living room in soft greens and blues"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1582687925018-6FK4EUKJ6QAFSIX44JXG/8778WEB.jpg",
+          "caption": "Dining room anchored by a bold abstract"
+        }
+      ]
     },
     {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/e3b89e78-4829-49c2-b36e-e7e2da2de53f/13+bailey-mcallister-interiors-alexander-1055.jpg",
-      "project": "Ross Classic",
-      "caption": "Nursery tucked under the eaves"
+      "name": "San Francisco Nursery",
+      "photos": [
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1581297048466-TQHAI57KYFR06NS85Q4U/13.jpg",
+          "caption": "Changing station with woven storage"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1580703978927-9Z0AMPI29IPDP7T8F42F/18.jpg",
+          "caption": "Quiet grays and a sculptural white lamp"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/4511f4c9-dba2-46d9-8907-3604baf53405/Nursery+Cover..jpg",
+          "caption": "Crib, glider, and room to grow"
+        }
+      ]
     },
     {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/3e4894de-c7c4-4b51-b1d3-e9dac29f270b/4+bailey-mcallister-interiors-0494.jpg",
-      "project": "Mill Valley Cottage",
-      "caption": "Breakfast nook with a view of the garden"
+      "name": "Kentfield Ranch",
+      "photos": [
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/fe47d94e-05dc-49c7-b007-6838399dcdf9/2+0386aWEB+COVER+PAGE+FOR+PROJECT.jpg",
+          "caption": "Floral drapes frame a family dining room"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/6046aa11-7228-4f25-84f3-2d43abcb0103/3+0073aWEB+.jpg",
+          "caption": "Kitchen island under a pair of lanterns"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/8639f5df-6551-4de6-8fa5-f1b2249171bb/7+0664aWEB.jpg",
+          "caption": "Powder room in a forest of wallpaper"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/23ab6248-ada9-4fb2-b120-c6d9e3b7f9df/10+0137aWEB.jpg",
+          "caption": "Bright bath with brass fittings"
+        }
+      ]
     },
     {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/989e9b7f-94e4-4d75-bd00-1a64913070bc/2+bailey-mcallister-interiors-0419+COVER+SHOT+FOR+PROJECT.jpg",
-      "project": "Mill Valley Cottage",
-      "caption": "Green sectional, framed prints, plenty of pillows"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/da4ce82d-9734-4de1-bb48-2044362b7ca5/7+bailey-mcallister-interiors-luce-5408-1.jpg",
-      "project": "Mill Valley Cottage",
-      "caption": "A reading corner that went all in on wallpaper"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1582687924922-5L5PGG5ARGXIVQK1V7JY/8814WEB.jpg",
-      "project": "Cow Hollow",
-      "caption": "Pleated lamp, patterned pillows, a throw within reach"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1582687924894-C494LALZ639DC7YIYTBY/8718WEB.jpg",
-      "project": "Cow Hollow",
-      "caption": "Living room in soft greens and blues"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1582687925018-6FK4EUKJ6QAFSIX44JXG/8778WEB.jpg",
-      "project": "Cow Hollow",
-      "caption": "Dining room anchored by a bold abstract"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1581297048466-TQHAI57KYFR06NS85Q4U/13.jpg",
-      "project": "San Francisco Nursery",
-      "caption": "Changing station with woven storage"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/1580703978927-9Z0AMPI29IPDP7T8F42F/18.jpg",
-      "project": "San Francisco Nursery",
-      "caption": "Quiet grays and a sculptural white lamp"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/4511f4c9-dba2-46d9-8907-3604baf53405/Nursery+Cover..jpg",
-      "project": "San Francisco Nursery",
-      "caption": "Crib, glider, and room to grow"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/fe47d94e-05dc-49c7-b007-6838399dcdf9/2+0386aWEB+COVER+PAGE+FOR+PROJECT.jpg",
-      "project": "Kentfield Ranch",
-      "caption": "Floral drapes frame a family dining room"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/6046aa11-7228-4f25-84f3-2d43abcb0103/3+0073aWEB+.jpg",
-      "project": "Kentfield Ranch",
-      "caption": "Kitchen island under a pair of lanterns"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/8639f5df-6551-4de6-8fa5-f1b2249171bb/7+0664aWEB.jpg",
-      "project": "Kentfield Ranch",
-      "caption": "Powder room in a forest of wallpaper"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/23ab6248-ada9-4fb2-b120-c6d9e3b7f9df/10+0137aWEB.jpg",
-      "project": "Kentfield Ranch",
-      "caption": "Bright bath with brass fittings"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/58f8745f-18f2-4dc6-8d9b-376fec28ee94/1+BaileyMcAllisterInteriors_23rdAve1322-FINAL.jpg",
-      "project": "Lake District",
-      "caption": "Living room with pattern at the windows"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/c27cfcf3-fff6-42e8-93df-5e42ef8550ee/6+BaileyMcAllisterInteriors_23rdAve1407-FINAL+%281%29.jpg",
-      "project": "Lake District",
-      "caption": "Marble backsplash behind glass-front cabinets"
-    },
-    {
-      "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/8309962d-c5f6-4d54-8d23-23e6c92d0368/8+BaileyMcAllisterInteriors_23rdAve1249-FINAL.jpg",
-      "project": "Lake District",
-      "caption": "Embroidered linens and a calm palette"
+      "name": "Lake District",
+      "photos": [
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/58f8745f-18f2-4dc6-8d9b-376fec28ee94/1+BaileyMcAllisterInteriors_23rdAve1322-FINAL.jpg",
+          "caption": "Living room with pattern at the windows"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/c27cfcf3-fff6-42e8-93df-5e42ef8550ee/6+BaileyMcAllisterInteriors_23rdAve1407-FINAL+%281%29.jpg",
+          "caption": "Marble backsplash behind glass-front cabinets"
+        },
+        {
+          "image": "https://images.squarespace-cdn.com/content/v1/5e2e0a40505e2f041271f1c3/8309962d-c5f6-4d54-8d23-23e6c92d0368/8+BaileyMcAllisterInteriors_23rdAve1249-FINAL.jpg",
+          "caption": "Embroidered linens and a calm palette"
+        }
+      ]
     }
   ]
 }

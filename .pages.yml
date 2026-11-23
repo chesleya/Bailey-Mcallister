@@ -4,30 +4,41 @@ media:
 
 content:
   - name: gallery
-    label: Home page photos
+    label: Projects & photos
     type: file
     path: content/gallery.json
     fields:
-      - name: photos
-        label: Photos
+      - name: projects
+        label: Projects
+        description: Drag projects to change the order they appear on the home page.
         type: object
         list:
           collapsible:
             collapsed: true
-            summary: "{project} · {caption}"
+            summary: "{name}"
         fields:
-          - name: image
-            label: Photo
-            type: image
-            required: true
-          - name: project
+          - name: name
             label: Project name
-            description: Shown in small capitals, e.g. Ross Classic
+            description: e.g. Ross Classic
             type: string
-          - name: caption
-            label: Caption
-            description: One short line about the room
-            type: string
+            required: true
+          - name: photos
+            label: Photos
+            description: Drag photos to reorder. Any size is fine; large files are shrunk automatically within a few minutes.
+            type: object
+            list:
+              collapsible:
+                collapsed: true
+                summary: "{caption}"
+            fields:
+              - name: image
+                label: Photo
+                type: image
+                required: true
+              - name: caption
+                label: Caption
+                description: One short line about the room (optional)
+                type: string
 
   - name: site
     label: Page text & details
