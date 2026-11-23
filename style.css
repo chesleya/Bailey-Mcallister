@@ -36,7 +36,7 @@ img { display: block; max-width: 100%; }
 }
 .slot { text-align: center; }
 .logo { padding: 0 2rem; }
-.logo img { height: 64px; width: auto; }
+.logo img { height: 64px; width: auto; mix-blend-mode: multiply; }
 .nav .slot a {
   text-decoration: none;
   font-size: .72rem;
