@@ -46,7 +46,11 @@ def safe_name(url):
 # 1. Bring Squarespace-hosted photos home.
 IMAGES.mkdir(exist_ok=True)
 urls = sorted({m for f in TEXT_FILES for m in SQS.findall(f.read_text(encoding="utf-8"))})
+copied = {}  # the same photo linked with different size suffixes is copied once
 for url in urls:
+    base = url.split("?")[0]
+    if base in copied:
+        replace_everywhere(url, copied[base]); continue
     stem, ext = safe_name(url)
     dest, n = IMAGES / f"{stem}{ext}", 2
     while dest.exists():  # never overwrite a different photo with the same file name
@@ -59,7 +63,8 @@ for url in urls:
         except Exception as e:  # leave the old link in place rather than break the page
             print("could not copy", url, e, file=sys.stderr)
             continue
-    replace_everywhere(url, f"images/{dest.name}")
+    copied[base] = f"images/{dest.name}"
+    replace_everywhere(url, copied[base])
 
 
 # 2 & 3. Shrink, convert, and make grid-sized copies.
