@@ -37,7 +37,7 @@ img { display: block; max-width: 100%; }
 }
 .slot { text-align: center; }
 .logo { padding: 0 2rem; }
-.logo img { height: 84px; width: auto; mix-blend-mode: multiply; }
+.logo img { height: 96px; width: auto; mix-blend-mode: multiply; }
 .nav .slot a {
   text-decoration: none;
   font-size: .72rem;
@@ -53,7 +53,7 @@ img { display: block; max-width: 100%; }
 /* guard for stale cached pages from the first version */
 .site-header svg { width: 18px; height: 18px; }
 
-main { max-width: 1240px; margin: 0 auto; padding: calc(84px + 2.9rem + 3.5rem) 1.5rem 5rem; }
+main { max-width: 1240px; margin: 0 auto; padding: calc(96px + 2.9rem + 3.5rem) 1.5rem 5rem; }
 
 /* Home gallery */
 .intro {
@@ -110,7 +110,7 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(84px + 2.9rem + 3.5rem) 
 
 /* Contact */
 .contact { text-align: center; max-width: 560px; margin: 3rem auto; }
-.contact p { color: #4a5540; }
+.contact p { color: var(--ink); }
 .button {
   display: inline-block;
   margin-top: 1.5rem;
@@ -152,9 +152,9 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(84px + 2.9rem + 3.5rem) 
     row-gap: .8rem;
   }
   .logo { grid-area: logo; justify-self: center; padding: 0; }
-  .logo img { height: 56px; }
+  .logo img { height: 64px; }
   .nav .slot a { font-size: .66rem; letter-spacing: .12em; }
-  main { padding: calc(56px + 1.8rem + 1.6rem + 2.5rem) 1.1rem 3.5rem; }
+  main { padding: calc(64px + 1.8rem + 1.6rem + 2.5rem) 1.1rem 3.5rem; }
   .intro { margin-bottom: 2.25rem; }
   .gallery { columns: 1; }
   .gallery figure { margin-bottom: 1.75rem; }
