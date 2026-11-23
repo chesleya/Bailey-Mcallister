@@ -1,114 +1,104 @@
 {
-  "projects": [
+  "photos": [
     {
-      "name": "Ross Classic",
-      "photos": [
-        {
-          "image": "images/1-bailey-mcallister-interiors-alexander-1185.jpg",
-          "caption": "Striped walls and a runner up the front stair"
-        },
-        {
-          "image": "images/5-bailey-mcallister-interiors-alexander-6210.jpg",
-          "caption": "Drapery in a crisp blue-and-gold print"
-        },
-        {
-          "image": "images/9-5-bailey-mcallister-interiors-alexander-6151.jpg",
-          "caption": "A writing desk, botanical prints, one bamboo chair"
-        },
-        {
-          "image": "images/13-bailey-mcallister-interiors-alexander-1055.jpg",
-          "caption": "Nursery tucked under the eaves"
-        }
-      ]
+      "image": "images/1-bailey-mcallister-interiors-alexander-1185.jpg",
+      "project": "Ross Classic",
+      "caption": "Striped walls and a runner up the front stair"
     },
     {
-      "name": "Mill Valley Cottage",
-      "photos": [
-        {
-          "image": "images/4-bailey-mcallister-interiors-0494.jpg",
-          "caption": "Breakfast nook with a view of the garden"
-        },
-        {
-          "image": "images/2-bailey-mcallister-interiors-0419-cover-shot-for-project.jpg",
-          "caption": "Green sectional, framed prints, plenty of pillows"
-        },
-        {
-          "image": "images/7-bailey-mcallister-interiors-luce-5408-1.jpg",
-          "caption": "A reading corner that went all in on wallpaper"
-        }
-      ]
+      "image": "images/5-bailey-mcallister-interiors-alexander-6210.jpg",
+      "project": "Ross Classic",
+      "caption": "Drapery in a crisp blue-and-gold print"
     },
     {
-      "name": "Cow Hollow",
-      "photos": [
-        {
-          "image": "images/8814web.jpg",
-          "caption": "Pleated lamp, patterned pillows, a throw within reach"
-        },
-        {
-          "image": "images/8718web.jpg",
-          "caption": "Living room in soft greens and blues"
-        },
-        {
-          "image": "images/8778web.jpg",
-          "caption": "Dining room anchored by a bold abstract"
-        }
-      ]
+      "image": "images/9-5-bailey-mcallister-interiors-alexander-6151.jpg",
+      "project": "Ross Classic",
+      "caption": "A writing desk, botanical prints, one bamboo chair"
     },
     {
-      "name": "San Francisco Nursery",
-      "photos": [
-        {
-          "image": "images/13.jpg",
-          "caption": "Changing station with woven storage"
-        },
-        {
-          "image": "images/18.jpg",
-          "caption": "Quiet grays and a sculptural white lamp"
-        },
-        {
-          "image": "images/nursery-cover.jpg",
-          "caption": "Crib, glider, and room to grow"
-        }
-      ]
+      "image": "images/13-bailey-mcallister-interiors-alexander-1055.jpg",
+      "project": "Ross Classic",
+      "caption": "Nursery tucked under the eaves"
     },
     {
-      "name": "Kentfield Ranch",
-      "photos": [
-        {
-          "image": "images/2-0386aweb-cover-page-for-project.jpg",
-          "caption": "Floral drapes frame a family dining room"
-        },
-        {
-          "image": "images/3-0073aweb.jpg",
-          "caption": "Kitchen island under a pair of lanterns"
-        },
-        {
-          "image": "images/7-0664aweb.jpg",
-          "caption": "Powder room in a forest of wallpaper"
-        },
-        {
-          "image": "images/10-0137aweb.jpg",
-          "caption": "Bright bath with brass fittings"
-        }
-      ]
+      "image": "images/4-bailey-mcallister-interiors-0494.jpg",
+      "project": "Mill Valley Cottage",
+      "caption": "Breakfast nook with a view of the garden"
     },
     {
-      "name": "Lake District",
-      "photos": [
-        {
-          "image": "images/1-baileymcallisterinteriors-23rdave1322-final.jpg",
-          "caption": "Living room with pattern at the windows"
-        },
-        {
-          "image": "images/6-baileymcallisterinteriors-23rdave1407-final-1.jpg",
-          "caption": "Marble backsplash behind glass-front cabinets"
-        },
-        {
-          "image": "images/8-baileymcallisterinteriors-23rdave1249-final.jpg",
-          "caption": "Embroidered linens and a calm palette"
-        }
-      ]
+      "image": "images/2-bailey-mcallister-interiors-0419-cover-shot-for-project.jpg",
+      "project": "Mill Valley Cottage",
+      "caption": "Green sectional, framed prints, plenty of pillows"
+    },
+    {
+      "image": "images/7-bailey-mcallister-interiors-luce-5408-1.jpg",
+      "project": "Mill Valley Cottage",
+      "caption": "A reading corner that went all in on wallpaper"
+    },
+    {
+      "image": "images/8814web.jpg",
+      "project": "Cow Hollow",
+      "caption": "Pleated lamp, patterned pillows, a throw within reach"
+    },
+    {
+      "image": "images/8718web.jpg",
+      "project": "Cow Hollow",
+      "caption": "Living room in soft greens and blues"
+    },
+    {
+      "image": "images/8778web.jpg",
+      "project": "Cow Hollow",
+      "caption": "Dining room anchored by a bold abstract"
+    },
+    {
+      "image": "images/13.jpg",
+      "project": "San Francisco Nursery",
+      "caption": "Changing station with woven storage"
+    },
+    {
+      "image": "images/18.jpg",
+      "project": "San Francisco Nursery",
+      "caption": "Quiet grays and a sculptural white lamp"
+    },
+    {
+      "image": "images/nursery-cover.jpg",
+      "project": "San Francisco Nursery",
+      "caption": "Crib, glider, and room to grow"
+    },
+    {
+      "image": "images/2-0386aweb-cover-page-for-project.jpg",
+      "project": "Kentfield Ranch",
+      "caption": "Floral drapes frame a family dining room"
+    },
+    {
+      "image": "images/3-0073aweb.jpg",
+      "project": "Kentfield Ranch",
+      "caption": "Kitchen island under a pair of lanterns"
+    },
+    {
+      "image": "images/7-0664aweb.jpg",
+      "project": "Kentfield Ranch",
+      "caption": "Powder room in a forest of wallpaper"
+    },
+    {
+      "image": "images/10-0137aweb.jpg",
+      "project": "Kentfield Ranch",
+      "caption": "Bright bath with brass fittings"
+    },
+    {
+      "image": "images/1-baileymcallisterinteriors-23rdave1322-final.jpg",
+      "project": "Lake District",
+      "caption": "Living room with pattern at the windows"
+    },
+    {
+      "image": "images/6-baileymcallisterinteriors-23rdave1407-final-1.jpg",
+      "project": "Lake District",
+      "caption": "Marble backsplash behind glass-front cabinets"
+    },
+    {
+      "image": "images/8-baileymcallisterinteriors-23rdave1249-final.jpg",
+      "project": "Lake District",
+      "caption": "Embroidered linens and a calm palette"
     }
   ]
 }

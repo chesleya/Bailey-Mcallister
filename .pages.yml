@@ -4,40 +4,31 @@ media:
 
 content:
   - name: gallery
-    label: Projects & photos
+    label: Photos
     type: file
     path: content/gallery.json
     fields:
-      - name: projects
-        label: Projects
+      - name: photos
+        label: Photos
         type: object
         list:
           collapsible:
             collapsed: true
-            summary: "{name}"
+            summary: "{project} · {caption}"
         fields:
-          - name: name
-            label: Project name
-            description: e.g. Ross Classic. Drag projects or photos by the handle on the left to reorder.
-            type: string
+          - name: image
+            label: Photo
+            description: Any size is fine. Big files are shrunk automatically a few minutes after saving. Drag the handle on the left to reorder.
+            type: image
             required: true
-          - name: photos
-            label: Photos
-            type: object
-            list:
-              collapsible:
-                collapsed: true
-                summary: "{caption}"
-            fields:
-              - name: image
-                label: Photo
-                description: Any size is fine. Big files are shrunk automatically a few minutes after saving.
-                type: image
-                required: true
-              - name: caption
-                label: Caption
-                description: One short line about the room (optional)
-                type: string
+          - name: project
+            label: Project name (optional)
+            description: Shown in small capitals, e.g. Ross Classic
+            type: string
+          - name: caption
+            label: Caption (optional)
+            description: One short line about the room
+            type: string
 
   - name: site
     label: Page text & details
