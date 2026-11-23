@@ -78,7 +78,7 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(96px + 2.9rem + 3.5rem) 
 .gallery figcaption {
   margin-top: .7rem;
   font-family: var(--serif);
-  font-size: 1.12rem;
+  font-size: 1rem;
   line-height: 1.35;
   color: #74806a;
 }
