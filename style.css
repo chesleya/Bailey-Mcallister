@@ -77,14 +77,19 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(96px + 2.9rem + 3.5rem) 
 .gallery img { width: 100%; height: auto; background: var(--line); }
 .gallery figcaption {
   margin-top: .7rem;
-  font-size: .9rem;
-  color: var(--muted);
+  font-family: var(--serif);
+  font-size: 1.12rem;
+  line-height: 1.35;
+  color: #74806a;
 }
 .gallery figcaption strong {
   display: block;
+  margin-bottom: .2rem;
   color: var(--ink);
-  font-weight: 400;
+  font-family: var(--sans);
+  font-weight: 500;
   font-size: .72rem;
+  line-height: 1.5;
   letter-spacing: .2em;
   text-transform: uppercase;
 }
