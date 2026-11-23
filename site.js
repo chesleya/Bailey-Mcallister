@@ -1,3 +1,20 @@
+// Editable site text and photos: content/site.json (edited in Pages CMS).
+(async () => {
+  let d;
+  try { d = await (await fetch("content/site.json", { cache: "no-cache" })).json(); } catch (e) { return; }
+  const sized = (src, w) => /squarespace-cdn\.com/.test(src) ? `${src.split("?")[0]}?format=${w}w` : src;
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  document.querySelectorAll("[data-field]").forEach(el => {
+    const k = el.dataset.field, v = d[k];
+    if (!v) return;
+    if (k === "about_photo") el.src = sized(v, 1000);
+    else if (k === "about_text") el.innerHTML = String(v).split(/\n\s*\n/).map(p => `<p>${esc(p.trim())}</p>`).join("");
+    else if (k === "email") { el.href = "mailto:" + v; el.textContent = v; }
+    else if (k === "instagram") el.href = v;
+    else el.textContent = v;
+  });
+})();
+
 // Home gallery: rendered from content/gallery.json (edited in Pages CMS), plus the lightbox.
 (async () => {
   const gallery = document.getElementById("gallery");

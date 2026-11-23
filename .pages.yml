@@ -29,3 +29,32 @@ content:
             label: Caption
             description: One short line about the room
             type: string
+
+  - name: site
+    label: Page text & details
+    type: file
+    path: content/site.json
+    fields:
+      - name: tagline
+        label: Home page tagline
+        type: string
+      - name: about_photo
+        label: About page photo
+        type: image
+      - name: about_text
+        label: About page text
+        description: Leave a blank line between paragraphs.
+        type: text
+      - name: contact_text
+        label: Contact page text
+        type: text
+      - name: email
+        label: Email address
+        description: Used on the Contact page and in the footer.
+        type: string
+      - name: location
+        label: Location (footer)
+        type: string
+      - name: instagram
+        label: Instagram link
+        type: string
