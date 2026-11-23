@@ -50,6 +50,9 @@ img { display: block; max-width: 100%; }
 }
 .nav .slot a:hover, .nav .slot a[aria-current="page"] { border-color: currentColor; }
 
+/* guard for stale cached pages from the first version */
+.site-header svg { width: 18px; height: 18px; }
+
 main { max-width: 1240px; margin: 0 auto; padding: calc(84px + 2.9rem + 3.5rem) 1.5rem 5rem; }
 
 /* Home gallery */
@@ -137,9 +140,25 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(84px + 2.9rem + 3.5rem) 
 
 @media (max-width: 760px) {
   .about { grid-template-columns: 1fr; gap: 2rem; }
-  .site-header { padding: 1rem .5rem .9rem; }
-  .logo { padding: 0 .6rem; }
-  .logo img { height: 52px; }
-  .nav .slot a { font-size: .58rem; letter-spacing: .1em; }
-  main { padding-top: calc(52px + 1.9rem + 2rem); }
+  .about h1, .contact h1 { font-size: 2.1rem; }
+}
+
+/* Phones: logo on its own row, four links evenly beneath */
+@media (max-width: 600px) {
+  .site-header { padding: 1rem .75rem .8rem; }
+  .nav {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "logo logo logo logo";
+    row-gap: .8rem;
+  }
+  .logo { grid-area: logo; justify-self: center; padding: 0; }
+  .logo img { height: 56px; }
+  .nav .slot a { font-size: .66rem; letter-spacing: .12em; }
+  main { padding: calc(56px + 1.8rem + 1.6rem + 2.5rem) 1.1rem 3.5rem; }
+  .intro { margin-bottom: 2.25rem; }
+  .gallery { columns: 1; }
+  .gallery figure { margin-bottom: 1.75rem; }
+  .contact { margin: 1.5rem auto; }
+  .button { padding: .9rem 1.2rem; letter-spacing: .14em; font-size: .72rem; max-width: 100%; }
+  .site-footer .sep { display: block; height: .35rem; visibility: hidden; }
 }
