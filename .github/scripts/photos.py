@@ -45,7 +45,7 @@ def safe_name(url):
 
 # 1. Bring Squarespace-hosted photos home.
 IMAGES.mkdir(exist_ok=True)
-urls = sorted({m for f in TEXT_FILES for m in SQS.findall(f.read_text(encoding="utf-8"))})
+urls = sorted({m for f in TEXT_FILES for m in SQS.findall(f.read_text(encoding="utf-8"))}, key=len, reverse=True)
 copied = {}  # the same photo linked with different size suffixes is copied once
 for url in urls:
     base = url.split("?")[0]
