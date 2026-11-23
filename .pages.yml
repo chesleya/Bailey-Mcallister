@@ -1,0 +1,31 @@
+media:
+  input: images
+  output: images
+
+content:
+  - name: gallery
+    label: Home page photos
+    type: file
+    path: content/gallery.json
+    fields:
+      - name: photos
+        label: Photos
+        description: Drag to reorder. The first photo appears first on the home page.
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{project} · {caption}"
+        fields:
+          - name: image
+            label: Photo
+            type: image
+            required: true
+          - name: project
+            label: Project name
+            description: Shown in small capitals, e.g. Ross Classic
+            type: string
+          - name: caption
+            label: Caption
+            description: One short line about the room
+            type: string
