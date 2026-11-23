@@ -10,7 +10,6 @@ content:
     fields:
       - name: photos
         label: Photos
-        description: Drag to reorder. The first photo appears first on the home page.
         type: object
         list:
           collapsible:
