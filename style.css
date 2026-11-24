@@ -89,7 +89,7 @@ main { max-width: 1240px; margin: 0 auto; padding: calc(96px + 2.9rem + 3.5rem) 
   font-weight: 400;
   font-style: italic;
   max-width: 34ch;
-  margin: .5rem auto 3.5rem;
+  margin: -.5rem auto 3.5rem;
   line-height: 1.4;
   color: var(--logo);
 }
